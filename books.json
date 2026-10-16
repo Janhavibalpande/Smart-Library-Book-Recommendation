@@ -5,7 +5,9 @@
     "author": "J.K. Rowling",
     "category": "Fantasy",
     "year": 1997,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 102,
@@ -13,7 +15,9 @@
     "author": "J.R.R. Tolkien",
     "category": "Fantasy",
     "year": 1937,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 103,
@@ -21,7 +25,9 @@
     "author": "A.P.J. Abdul Kalam",
     "category": "Biography",
     "year": 1999,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 104,
@@ -29,7 +35,9 @@
     "author": "Paulo Coelho",
     "category": "Fiction",
     "year": 1988,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 105,
@@ -37,7 +45,9 @@
     "author": "James Clear",
     "category": "Self-help",
     "year": 2018,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 106,
@@ -45,7 +55,9 @@
     "author": "Robert Kiyosaki",
     "category": "Finance",
     "year": 1997,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 107,
@@ -53,7 +65,9 @@
     "author": "Morgan Housel",
     "category": "Finance",
     "year": 2020,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 108,
@@ -61,7 +75,9 @@
     "author": "Hector Garcia",
     "category": "Self-help",
     "year": 2016,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 109,
@@ -69,7 +85,9 @@
     "author": "John Green",
     "category": "Romance",
     "year": 2012,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 110,
@@ -77,7 +95,9 @@
     "author": "Jane Austen",
     "category": "Romance",
     "year": 1813,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 111,
@@ -85,7 +105,9 @@
     "author": "Markus Zusak",
     "category": "Historical Fiction",
     "year": 2005,
-    "available": false
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 112,
@@ -93,7 +115,9 @@
     "author": "Harper Lee",
     "category": "Classic",
     "year": 1960,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 113,
@@ -101,7 +125,9 @@
     "author": "George Orwell",
     "category": "Dystopian",
     "year": 1949,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 114,
@@ -109,7 +135,9 @@
     "author": "George Orwell",
     "category": "Political Fiction",
     "year": 1945,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 115,
@@ -117,7 +145,9 @@
     "author": "J.R.R. Tolkien",
     "category": "Fantasy",
     "year": 1954,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 116,
@@ -125,7 +155,9 @@
     "author": "Stephen Hawking",
     "category": "Science",
     "year": 1988,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 117,
@@ -133,7 +165,9 @@
     "author": "Stephen Hawking",
     "category": "Science",
     "year": 2002,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 118,
@@ -141,7 +175,9 @@
     "author": "Amish Tripathi",
     "category": "Mythology",
     "year": 2010,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 119,
@@ -149,7 +185,9 @@
     "author": "Amish Tripathi",
     "category": "Mythology",
     "year": 2011,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 120,
@@ -157,7 +195,9 @@
     "author": "Ruskin Bond",
     "category": "Fiction",
     "year": 1980,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 121,
@@ -165,7 +205,9 @@
     "author": "Khushwant Singh",
     "category": "Historical Fiction",
     "year": 1956,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 122,
@@ -173,7 +215,9 @@
     "author": "R.K. Narayan",
     "category": "Short Stories",
     "year": 1943,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 123,
@@ -181,7 +225,9 @@
     "author": "Cal Newport",
     "category": "Productivity",
     "year": 2016,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 124,
@@ -189,7 +235,9 @@
     "author": "Robin Sharma",
     "category": "Self-help",
     "year": 2018,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 125,
@@ -197,7 +245,9 @@
     "author": "Yuval Noah Harari",
     "category": "History",
     "year": 2011,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 126,
@@ -205,7 +255,9 @@
     "author": "Robert Galbraith",
     "category": "Mystery",
     "year": 2013,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 127,
@@ -213,7 +265,9 @@
     "author": "Gillian Flynn",
     "category": "Thriller",
     "year": 2012,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 128,
@@ -221,7 +275,9 @@
     "author": "Dan Brown",
     "category": "Mystery",
     "year": 2003,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 129,
@@ -229,7 +285,9 @@
     "author": "Dan Brown",
     "category": "Thriller",
     "year": 2000,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 130,
@@ -237,7 +295,9 @@
     "author": "Arthur Conan Doyle",
     "category": "Mystery",
     "year": 1892,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 131,
@@ -245,7 +305,9 @@
     "author": "Mark Twain",
     "category": "Adventure",
     "year": 1876,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 132,
@@ -253,7 +315,9 @@
     "author": "Robert Louis Stevenson",
     "category": "Adventure",
     "year": 1883,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 133,
@@ -261,7 +325,9 @@
     "author": "Jules Verne",
     "category": "Adventure",
     "year": 1873,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 134,
@@ -269,7 +335,9 @@
     "author": "Jules Verne",
     "category": "Science Fiction",
     "year": 1864,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 135,
@@ -277,7 +345,9 @@
     "author": "Frank Herbert",
     "category": "Science Fiction",
     "year": 1965,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 136,
@@ -285,7 +355,9 @@
     "author": "Andy Weir",
     "category": "Science Fiction",
     "year": 2011,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 137,
@@ -293,7 +365,9 @@
     "author": "Stephen Hawking",
     "category": "Science",
     "year": 2018,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 138,
@@ -301,7 +375,9 @@
     "author": "Richard Dawkins",
     "category": "Science",
     "year": 1976,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 139,
@@ -309,7 +385,9 @@
     "author": "Carl Sagan",
     "category": "Science",
     "year": 1980,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 140,
@@ -317,7 +395,9 @@
     "author": "Walter Isaacson",
     "category": "Biography",
     "year": 2011,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 141,
@@ -325,7 +405,9 @@
     "author": "Anne Frank",
     "category": "Biography",
     "year": 1947,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 142,
@@ -333,7 +415,9 @@
     "author": "Nelson Mandela",
     "category": "Biography",
     "year": 1994,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 143,
@@ -341,7 +425,9 @@
     "author": "Mahatma Gandhi",
     "category": "Autobiography",
     "year": 1927,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 144,
@@ -349,7 +435,9 @@
     "author": "Jawaharlal Nehru",
     "category": "History",
     "year": 1946,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 145,
@@ -357,7 +445,9 @@
     "author": "Napoleon Hill",
     "category": "Self-help",
     "year": 1937,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 146,
@@ -365,7 +455,9 @@
     "author": "Eckhart Tolle",
     "category": "Self-help",
     "year": 1997,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 147,
@@ -373,7 +465,9 @@
     "author": "Dale Carnegie",
     "category": "Self-help",
     "year": 1936,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 148,
@@ -381,7 +475,9 @@
     "author": "Benjamin Graham",
     "category": "Finance",
     "year": 1949,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 149,
@@ -389,7 +485,9 @@
     "author": "Eric Ries",
     "category": "Business",
     "year": 2011,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 150,
@@ -397,7 +495,9 @@
     "author": "Peter Thiel",
     "category": "Business",
     "year": 2014,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 151,
@@ -405,7 +505,9 @@
     "author": "Sally Rooney",
     "category": "Romance",
     "year": 2018,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 152,
@@ -413,7 +515,9 @@
     "author": "Jojo Moyes",
     "category": "Romance",
     "year": 2012,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 153,
@@ -421,7 +525,9 @@
     "author": "Nicholas Sparks",
     "category": "Romance",
     "year": 1996,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 154,
@@ -429,7 +535,9 @@
     "author": "Chetan Bhagat",
     "category": "Fiction",
     "year": 2004,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 155,
@@ -437,7 +545,9 @@
     "author": "Aravind Adiga",
     "category": "Fiction",
     "year": 2008,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 156,
@@ -445,7 +555,9 @@
     "author": "Chitra Banerjee Divakaruni",
     "category": "Mythology",
     "year": 2008,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 157,
@@ -453,7 +565,9 @@
     "author": "Amish Tripathi",
     "category": "Mythology",
     "year": 2010,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 158,
@@ -461,7 +575,9 @@
     "author": "R.K. Narayan",
     "category": "Fiction",
     "year": 1958,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
     "id": 159,
@@ -469,14 +585,18 @@
     "author": "Emily Bronte",
     "category": "Classic",
     "year": 1847,
-    "available": true
+    "available": true,
+    "quantity": 1,
+    "available_copies": 1
   },
   {
-    "id": 160,
-    "title": "Jane Eyre",
-    "author": "Charlotte Bronte",
-    "category": "Classic",
-    "year": 1847,
+    "id": 201,
+    "title": "Harry Potter and the Philosopher's Stone",
+    "author": "J. K. Rowling",
+    "category": "Fantasy",
+    "year": 1997,
+    "quantity": 5,
+    "available_copies": 4,
     "available": true
   }
 ]

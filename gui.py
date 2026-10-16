@@ -69,6 +69,19 @@ class SmartLibrary:
 
         self.books = load_books()
 
+        # Backward-compatible quantity fields for books saved by older versions.
+        # Existing records keep working without requiring manual edits to books.json.
+        for book in self.books:
+            quantity = max(1, int(book.get("quantity", 1)))
+            book["quantity"] = quantity
+            if "available_copies" in book:
+                book["available_copies"] = max(
+                    0, min(quantity, int(book["available_copies"]))
+                )
+            else:
+                book["available_copies"] = quantity if book.get("available", True) else 0
+            book["available"] = book["available_copies"] > 0
+
         self.book_index = HashTable(
             size=max(10, len(self.books) * 2)
         )
@@ -331,11 +344,11 @@ class SmartLibrary:
             "A simple overview of your library."
         )
 
-        total = len(self.books)
+        total = sum(int(book.get("quantity", 1)) for book in self.books)
 
         available = sum(
-            1 for book in self.books
-            if book.get("available", True)
+            int(book.get("available_copies", book.get("quantity", 1)))
+            for book in self.books
         )
 
         borrowed = total - available
@@ -349,9 +362,9 @@ class SmartLibrary:
         cards = tk.Frame(self.main_area, bg=BG)
         cards.pack(fill="x", padx=24, pady=8)
 
-        self.make_card(cards, "Total Books", total, PEACH)
-        self.make_card(cards, "Available", available, SAGE)
-        self.make_card(cards, "Borrowed", borrowed, BLUE)
+        self.make_card(cards, "Total Copies", total, PEACH)
+        self.make_card(cards, "Available Copies", available, SAGE)
+        self.make_card(cards, "Borrowed Copies", borrowed, BLUE)
         self.make_card(cards, "Categories", categories, LAVENDER)
 
         panel = tk.Frame(
@@ -499,7 +512,7 @@ class SmartLibrary:
 
         columns = (
             "id", "title", "author",
-            "category", "year", "status"
+            "category", "year", "quantity", "status"
         )
 
         self.book_tree = ttk.Treeview(
@@ -514,7 +527,8 @@ class SmartLibrary:
             "author": ("Author", 170),
             "category": ("Category", 125),
             "year": ("Year", 65),
-            "status": ("Availability", 110)
+            "quantity": ("Copies (Available/Total)", 145),
+            "status": ("Availability", 100)
         }
 
         for column, (heading, width) in headings.items():
@@ -667,12 +681,15 @@ class SmartLibrary:
                 if book.get("category", "") != category:
                     continue
 
-            available = book.get("available", True)
+            available_copies = int(
+                book.get("available_copies", book.get("quantity", 1))
+            )
+            total_copies = int(book.get("quantity", 1))
 
-            if status == "Available" and not available:
+            if status == "Available" and available_copies <= 0:
                 continue
 
-            if status == "Borrowed" and available:
+            if status == "Borrowed" and available_copies >= total_copies:
                 continue
 
             results.append(book)
@@ -687,10 +704,11 @@ class SmartLibrary:
             self.book_tree.delete(item)
 
         for book in self.filtered_books():
-            status = (
-                "Available" if book.get("available", True)
-                else "Borrowed"
+            available_copies = int(
+                book.get("available_copies", book.get("quantity", 1))
             )
+            total_copies = int(book.get("quantity", 1))
+            status = "Available" if available_copies > 0 else "Out of Stock"
 
             self.book_tree.insert(
                 "",
@@ -701,6 +719,7 @@ class SmartLibrary:
                     book.get("author", ""),
                     book.get("category", ""),
                     book.get("year", ""),
+                    f"{available_copies}/{total_copies}",
                     status
                 )
             )
@@ -736,7 +755,7 @@ class SmartLibrary:
     def add_book(self):
         dialog = tk.Toplevel(self.root)
         dialog.title("Add a Book")
-        dialog.geometry("420x460")
+        dialog.geometry("420x530")
         dialog.configure(bg=BG)
         dialog.resizable(False, False)
         dialog.transient(self.root)
@@ -753,7 +772,7 @@ class SmartLibrary:
         fields = {}
 
         for label in (
-            "Book ID", "Title", "Author", "Category", "Year"
+            "Book ID", "Title", "Author", "Category", "Year", "Quantity"
         ):
             tk.Label(
                 dialog,
@@ -777,6 +796,7 @@ class SmartLibrary:
             try:
                 book_id = int(fields["Book ID"].get().strip())
                 year = int(fields["Year"].get().strip())
+                quantity = int(fields["Quantity"].get().strip())
                 title = fields["Title"].get().strip()
                 author = fields["Author"].get().strip()
                 category = fields["Category"].get().strip()
@@ -808,6 +828,11 @@ class SmartLibrary:
                         "Please enter a valid year."
                     )
 
+                if quantity < 1 or quantity > 10000:
+                    raise ValueError(
+                        "Quantity must be a whole number between 1 and 10000."
+                    )
+
             except ValueError as error:
                 messagebox.showerror(
                     "Invalid Input",
@@ -822,6 +847,8 @@ class SmartLibrary:
                 "author": author,
                 "category": category,
                 "year": year,
+                "quantity": quantity,
+                "available_copies": quantity,
                 "available": True
             }
 
@@ -890,25 +917,31 @@ class SmartLibrary:
         if book is None:
             return
 
-        if not book.get("available", True):
+        quantity = int(book.get("quantity", 1))
+        available_copies = int(
+            book.get("available_copies", quantity if book.get("available", True) else 0)
+        )
+
+        if available_copies <= 0:
             messagebox.showinfo(
-                "Already Borrowed",
-                "This book is currently marked as borrowed."
+                "No Copies Available",
+                "All copies of this book are currently borrowed."
             )
             return
 
-        book["available"] = False
+        book["available_copies"] = available_copies - 1
+        book["available"] = book["available_copies"] > 0
 
         if save_books(self.books):
             self.log_activity(
-                f"Borrowed: {book.get('title')} "
-                f"(ID {book.get('id')})"
+                f"Borrowed 1 copy: {book.get('title')} "
+                f"(ID {book.get('id')}); "
+                f"{book['available_copies']}/{quantity} copies remain"
             )
-
             self.show_page("Book Management")
-
         else:
-            book["available"] = True
+            book["available_copies"] = available_copies
+            book["available"] = available_copies > 0
 
     def return_book(self):
         book = self.selected_book()
@@ -916,25 +949,31 @@ class SmartLibrary:
         if book is None:
             return
 
-        if book.get("available", True):
+        quantity = int(book.get("quantity", 1))
+        available_copies = int(
+            book.get("available_copies", quantity if book.get("available", True) else 0)
+        )
+
+        if available_copies >= quantity:
             messagebox.showinfo(
-                "Already Available",
-                "This book is already marked as available."
+                "All Copies Available",
+                "No borrowed copies of this book need to be returned."
             )
             return
 
+        book["available_copies"] = available_copies + 1
         book["available"] = True
 
         if save_books(self.books):
             self.log_activity(
-                f"Returned: {book.get('title')} "
-                f"(ID {book.get('id')})"
+                f"Returned 1 copy: {book.get('title')} "
+                f"(ID {book.get('id')}); "
+                f"{book['available_copies']}/{quantity} copies available"
             )
-
             self.show_page("Book Management")
-
         else:
-            book["available"] = False
+            book["available_copies"] = available_copies
+            book["available"] = available_copies > 0
 
     def sort_table(self, column):
         if not hasattr(self, "book_tree"):
@@ -1289,10 +1328,11 @@ class SmartLibrary:
             )
 
             for index, book in enumerate(related, start=1):
-                status = (
-                    "Available" if book.get("available", True)
-                    else "Borrowed"
+                available_copies = int(
+                    book.get("available_copies", book.get("quantity", 1))
                 )
+                total_copies = int(book.get("quantity", 1))
+                status = f"{available_copies}/{total_copies} copies available"
 
                 card = tk.Frame(
                     results_content,
