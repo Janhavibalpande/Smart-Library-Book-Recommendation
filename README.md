@@ -1,170 +1,108 @@
-\# 📚 Smart Library \& Book Recommendation System
+# 📚 Smart Library & Book Recommendation System
 
+**A Data Structures and Algorithms (DSA) Based Library Management Application**
 
-
-\*\*A Data Structures and Algorithms (DSA) Based Library Management Application\*\*
-
-
-
-The Smart Library \& Book Recommendation System is a Python-based desktop application designed to simplify library management and demonstrate the practical use of Data Structures and Algorithms in a real-world scenario.
-
-
+The Smart Library & Book Recommendation System is a Python-based desktop application designed to simplify library management and demonstrate the practical use of Data Structures and Algorithms in a real-world scenario.
 
 The project provides a graphical user interface built with Tkinter and uses JSON for storing book information. It combines common library operations with algorithm implementations for searching, sorting, organizing, and processing data.
 
-
-
 The project also contains separate algorithm modules and automated tests to demonstrate and verify the implementation of different DSA concepts.
 
+---
 
+## 📌 Table of Contents
 
-\---
+1. Project Overview
 
+2. Objectives
 
+3. Features
 
-\## 📌 Table of Contents
+4. Technologies Used
 
+5. Project Structure
 
+6. Data Structures and Algorithms Used
 
-1\. Project Overview
+7. Requirements
 
-2\. Objectives
+8. How to Download the Project
 
-3\. Features
+9. How to Run the Application
 
-4\. Technologies Used
+10. How to Run the Tests
 
-5\. Project Structure
+11. Data Storage
 
-6\. Data Structures and Algorithms Used
+12. Future Improvements
 
-7\. Requirements
+13. Author
 
-8\. How to Download the Project
+---
 
-9\. How to Run the Application
-
-10\. How to Run the Tests
-
-11\. Data Storage
-
-12\. Future Improvements
-
-13\. Author
-
-
-
-\---
-
-
-
-\## 🎯 Project Overview
-
-
+## 🎯 Project Overview
 
 Managing books manually can become difficult as a library collection grows. Searching for books, maintaining records, organizing information, and managing borrowing requests can require significant time and effort.
 
-
-
 This project addresses these challenges through a desktop-based library management system. It demonstrates how different data structures and algorithms can support book management and related operations.
-
-
 
 The application is developed in Python, with Tkinter providing the graphical interface and JSON serving as the book data storage format.
 
-
-
 The project is also designed as an academic demonstration of Data Structures and Algorithms, connecting theoretical concepts with practical programming applications.
 
+## 🎯 Objectives
 
+- Develop a user-friendly library management application.
 
-\## 🎯 Objectives
+- Apply Data Structures and Algorithms to practical library operations.
 
+- Implement efficient searching and sorting techniques.
 
+- Organize book information and support library record management.
 
-\- Develop a user-friendly library management application.
+- Demonstrate the use of trees, linked lists, stacks, queues, hashing, tries, and graphs.
 
-\- Apply Data Structures and Algorithms to practical library operations.
+- Test algorithm implementations using Python's automated testing framework.
 
-\- Implement efficient searching and sorting techniques.
+- Develop a modular, maintainable, and extensible Python project.
 
-\- Organize book information and support library record management.
+## ✨ Features
 
-\- Demonstrate the use of trees, linked lists, stacks, queues, hashing, tries, and graphs.
+### 📖 Book Management
 
-\- Test algorithm implementations using Python's automated testing framework.
+- Add new books to the library collection.
 
-\- Develop a modular, maintainable, and extensible Python project.
+- Search for books using supported search options.
 
+- Delete book records.
 
+- Manage book borrowing and returning.
 
-\## ✨ Features
+- Store book information in a JSON file.
 
-
-
-\### 📖 Book Management
-
-
-
-\- Add new books to the library collection.
-
-\- Search for books using supported search options.
-
-\- Delete book records.
-
-\- Manage book borrowing and returning.
-
-\- Store book information in a JSON file.
-
-
-
-\### 🔍 Searching and Sorting
-
-
+### 🔍 Searching and Sorting
 
 The project includes implementations of searching and sorting algorithms to demonstrate how different techniques can locate and organize data.
 
-
-
-\### 💡 Book Recommendations
-
-
+### 💡 Book Recommendations
 
 The project includes book recommendation functionality within the library application. Recommendation behaviour depends on the implemented application logic and available book information.
 
-
-
-\### 🧩 Data Structures and Algorithms
-
-
+### 🧩 Data Structures and Algorithms
 
 The project contains separate modules for multiple data structures and algorithms, including linked lists, stacks, queues, trees, hashing, tries, and graph algorithms.
 
-
-
-\### 🧪 Automated Testing
-
-
+### 🧪 Automated Testing
 
 The project includes a test suite covering individual algorithm modules and integration scenarios. This helps verify expected behaviour and detect implementation errors.
 
-
-
-\### 🎨 Graphical User Interface
-
-
+### 🎨 Graphical User Interface
 
 The desktop interface is built using Tkinter and is intended to make library operations accessible through a graphical application rather than requiring users to enter commands for every operation.
 
+---
 
-
-\---
-
-
-
-\## 🛠️ Technologies Used
-
-
+## 🛠️ Technologies Used
 
 | Technology | Purpose |
 
@@ -182,19 +120,11 @@ The desktop interface is built using Tkinter and is intended to make library ope
 
 | `unittest` | Automated testing |
 
+---
 
-
-\---
-
-
-
-\## 📁 Project Structure
-
-
+## 📁 Project Structure
 
 The repository contains the following main files and directories:
-
-
 
 ```text
 
@@ -204,7 +134,7 @@ Smart-Library-Book-Recommendation-System/
 
 ├── algorithms/
 
-│   ├── balanced\_trees.py
+│   ├── balanced_trees.py
 
 │   ├── dsu.py
 
@@ -212,11 +142,11 @@ Smart-Library-Book-Recommendation-System/
 
 │   ├── hashing.py
 
-│   ├── linked\_list.py
+│   ├── linked_list.py
 
-│   ├── searching\_sorting.py
+│   ├── searching_sorting.py
 
-│   ├── stack\_queue.py
+│   ├── stack_queue.py
 
 │   ├── trees.py
 
@@ -226,31 +156,31 @@ Smart-Library-Book-Recommendation-System/
 
 ├── try/
 
-│   ├── test\_algorithms.py
+│   ├── test_algorithms.py
 
-│   ├── test\_balanced\_trees.py
+│   ├── test_balanced_trees.py
 
-│   ├── test\_dsu.py
+│   ├── test_dsu.py
 
-│   ├── test\_graphs.py
+│   ├── test_graphs.py
 
-│   ├── test\_hashing.py
+│   ├── test_hashing.py
 
-│   ├── test\_linked\_list.py
+│   ├── test_linked_list.py
 
-│   ├── test\_searching\_sorting.py
+│   ├── test_searching_sorting.py
 
-│   ├── test\_stack\_queue.py
+│   ├── test_stack_queue.py
 
-│   ├── test\_trees.py
+│   ├── test_trees.py
 
-│   ├── test\_trie.py
+│   ├── test_trie.py
 
-│   └── test\_weighted\_graphs.py
+│   └── test_weighted_graphs.py
 
 │
 
-├── book\_manager.py
+├── book_manager.py
 
 ├── books.json
 
@@ -264,169 +194,101 @@ Smart-Library-Book-Recommendation-System/
 
 ```
 
+**Note:** The `try/` directory contains automated test files. The `algorithms/` directory contains the corresponding algorithm implementations. The actual contents of the repository may change as the project develops.
 
+---
 
-\*\*Note:\*\* The `try/` directory contains automated test files. The `algorithms/` directory contains the corresponding algorithm implementations. The actual contents of the repository may change as the project develops.
-
-
-
-\---
-
-
-
-\## 🧠 Data Structures and Algorithms Used
-
-
+## 🧠 Data Structures and Algorithms Used
 
 The project includes the following DSA implementations.
 
+### 1. Searching and Sorting
 
+- Linear Search
 
-\### 1. Searching and Sorting
+- Binary Search
 
+- Bubble Sort
 
+- Merge Sort
 
-\- Linear Search
-
-\- Binary Search
-
-\- Bubble Sort
-
-\- Merge Sort
-
-\- Quick Sort
-
-
+- Quick Sort
 
 These algorithms demonstrate different ways to find and arrange data.
 
-
-
-\### 2. Linked Lists
-
-
+### 2. Linked Lists
 
 Linked lists demonstrate how elements can be connected using nodes and how operations such as insertion, traversal, and deletion can be performed.
 
-
-
-\### 3. Stacks
-
-
+### 3. Stacks
 
 Stacks follow the Last In, First Out (LIFO) principle. They are useful for operations where the most recently added item must be processed first.
 
-
-
-\### 4. Queues
-
-
+### 4. Queues
 
 Queues follow the First In, First Out (FIFO) principle and are suitable for processing requests in arrival order.
 
+### 5. Deques and Priority Queues
 
+- **Deque:** Supports insertion and removal at both ends.
 
-\### 5. Deques and Priority Queues
+- **Priority Queue:** Processes elements according to priority rather than only their arrival order.
 
+### 6. Trees
 
+- Binary Search Tree (BST)
 
-\- \*\*Deque:\*\* Supports insertion and removal at both ends.
+- AVL Tree
 
-\- \*\*Priority Queue:\*\* Processes elements according to priority rather than only their arrival order.
+- B-Tree
 
-
-
-\### 6. Trees
-
-
-
-\- Binary Search Tree (BST)
-
-\- AVL Tree
-
-\- B-Tree
-
-\- B+ Tree
-
-
+- B+ Tree
 
 These tree structures demonstrate searching, ordering, balancing, and tree-based data organization.
 
-
-
-\### 7. Hashing
-
-
+### 7. Hashing
 
 Hash tables support key-based data access and demonstrate how hashing can be used for efficient lookup operations.
 
-
-
-\### 8. Tries
-
-
+### 8. Tries
 
 Tries organize strings by their prefixes and can be used for prefix searching and autocomplete functionality.
 
-
-
-\### 9. Graphs
-
-
+### 9. Graphs
 
 Graph implementations demonstrate:
 
+- Breadth-First Search (BFS)
 
+- Depth-First Search (DFS)
 
-\- Breadth-First Search (BFS)
+- Connected Components
 
-\- Depth-First Search (DFS)
+- Weighted Graphs
 
-\- Connected Components
+- Minimum Spanning Tree algorithms
 
-\- Weighted Graphs
-
-\- Minimum Spanning Tree algorithms
-
-
-
-\### 10. Disjoint Set Union (DSU)
-
-
+### 10. Disjoint Set Union (DSU)
 
 DSU maintains groups of connected elements and supports union and connectivity operations.
 
+**Academic note:** The presence of an algorithm in the repository does not necessarily mean that it is exposed as a separate button or feature in the graphical interface. The algorithm modules and their tests can also be demonstrated independently.
 
+---
 
-\*\*Academic note:\*\* The presence of an algorithm in the repository does not necessarily mean that it is exposed as a separate button or feature in the graphical interface. The algorithm modules and their tests can also be demonstrated independently.
-
-
-
-\---
-
-
-
-\## 💻 Requirements
-
-
+## 💻 Requirements
 
 Before running the project, make sure your computer has:
 
+- Python 3 installed.
 
+- Tkinter available with your Python installation.
 
-\- Python 3 installed.
+- A Windows, Linux, or macOS environment capable of running Tkinter.
 
-\- Tkinter available with your Python installation.
-
-\- A Windows, Linux, or macOS environment capable of running Tkinter.
-
-\- Git (optional, if you download the project as a ZIP file).
-
-
+- Git (optional, if you download the project as a ZIP file).
 
 To check your Python installation, open Command Prompt or a terminal and execute:
-
-
 
 ```bash
 
@@ -434,11 +296,7 @@ python --version
 
 ```
 
-
-
 On Windows, you can also use:
-
-
 
 ```bash
 
@@ -446,79 +304,41 @@ py --version
 
 ```
 
-
-
 If the `python` command is not recognized, try `py` or install Python from the official website:
-
-
 
 https://www.python.org/downloads/
 
-
-
 During installation on Windows, enable the option to add Python to PATH if available.
 
+---
 
+## ⬇️ How to Download the Project
 
-\---
-
-
-
-\## ⬇️ How to Download the Project
-
-
-
-\### Option 1: Download as a ZIP file
-
-
+### Option 1: Download as a ZIP file
 
 This is the easiest method for beginners.
 
-
-
-1\. Open the GitHub repository:
-
-
+1. Open the GitHub repository:
 
 &#x20;  https://github.com/JidnyasaMude/Smart-Library-Book-Recommendation-System
 
+2. Click the green **Code** button.
 
+3. Select **Download ZIP**.
 
-2\. Click the green \*\*Code\*\* button.
+4. Wait for the download to finish.
 
+5. Extract the downloaded ZIP file to a folder on your computer.
 
+6. Open the extracted project folder in File Explorer or Visual Studio Code.
 
-3\. Select \*\*Download ZIP\*\*.
-
-
-
-4\. Wait for the download to finish.
-
-
-
-5\. Extract the downloaded ZIP file to a folder on your computer.
-
-
-
-6\. Open the extracted project folder in File Explorer or Visual Studio Code.
-
-
-
-7\. Open a terminal inside the folder.
-
-
+7. Open a terminal inside the folder.
 
 You are now ready to run the project.
 
-
-
-\### Option 2: Clone using Git
-
-
+### Option 2: Clone using Git
 
 If Git is installed, open a terminal and execute:
-
-
 
 ```bash
 
@@ -526,11 +346,7 @@ git clone https://github.com/JidnyasaMude/Smart-Library-Book-Recommendation-Syst
 
 ```
 
-
-
 Navigate into the downloaded repository:
-
-
 
 ```bash
 
@@ -538,47 +354,25 @@ cd Smart-Library-Book-Recommendation-System
 
 ```
 
+---
 
-
-\---
-
-
-
-\## ▶️ How to Run the Application
-
-
+## ▶️ How to Run the Application
 
 Follow these steps to launch the desktop application.
 
-
-
-\### Step 1: Open the project folder
-
-
+### Step 1: Open the project folder
 
 Open the extracted `Smart-Library-Book-Recommendation-System` folder in Visual Studio Code or your preferred editor.
 
+### Step 2: Open the terminal
 
+In Visual Studio Code, select **Terminal → New Terminal**.
 
-\### Step 2: Open the terminal
+Make sure the terminal is opened in the project root directory, where `main.py`, `gui.py`, and `book_manager.py` are located.
 
-
-
-In Visual Studio Code, select \*\*Terminal → New Terminal\*\*.
-
-
-
-Make sure the terminal is opened in the project root directory, where `main.py`, `gui.py`, and `book\_manager.py` are located.
-
-
-
-\### Step 3: Run the application
-
-
+### Step 3: Run the application
 
 Execute:
-
-
 
 ```bash
 
@@ -586,11 +380,7 @@ python main.py
 
 ```
 
-
-
 If you are using Windows and the `python` command does not work, try:
-
-
 
 ```bash
 
@@ -598,141 +388,79 @@ py main.py
 
 ```
 
-
-
-\### Step 4: Use the graphical interface
-
-
+### Step 4: Use the graphical interface
 
 If the environment is configured correctly, the Tkinter application window should open.
 
-
-
 Use the available interface to explore the library management functionality.
 
+**Important:** This is a desktop application, not a website. It does not open at a local HTTP address such as `http://127.0.0.1:5000`. You run it on your computer using Python.
 
+---
 
-\*\*Important:\*\* This is a desktop application, not a website. It does not open at a local HTTP address such as `http://127.0.0.1:5000`. You run it on your computer using Python.
-
-
-
-\---
-
-
-
-\## 🧪 How to Run the Automated Tests
-
-
+## 🧪 How to Run the Automated Tests
 
 The repository includes automated tests for the algorithm modules.
 
-
-
-\### Step 1: Open the project root directory
-
-
+### Step 1: Open the project root directory
 
 Open a terminal in the folder containing the `algorithms/` and `try/` directories.
 
-
-
-\### Step 2: Execute the test command
-
-
+### Step 2: Execute the test command
 
 Run:
 
-
-
 ```bash
 
-python -m unittest discover -s try -p "test\_\*.py" -v
+python -m unittest discover -s try -p "test_*.py" -v
 
 ```
-
-
 
 On Windows, you can also use:
 
-
-
 ```bash
 
-py -m unittest discover -s try -p "test\_\*.py" -v
+py -m unittest discover -s try -p "test_*.py" -v
 
 ```
 
-
-
-\### Step 3: Check the results
-
-
+### Step 3: Check the results
 
 The terminal displays each discovered test and its result.
 
-
-
 A successful run ends with output similar to:
-
-
 
 ```text
 
-\----------------------------------------------------------------------
+----------------------------------------------------------------------
 
 Ran 81 tests in 0.026s
-
-
 
 OK
 
 ```
 
-
-
 The execution time may differ between computers.
 
+**Previously verified result:** The project test suite passed 81 automated tests in the development environment. Run the command on your own computer to verify the current version of the code.
 
+---
 
-\*\*Previously verified result:\*\* The project test suite passed 81 automated tests in the development environment. Run the command on your own computer to verify the current version of the code.
-
-
-
-\---
-
-
-
-\## 💾 Data Storage
-
-
+## 💾 Data Storage
 
 The project uses `books.json` to store book information.
 
-
-
 This file is important because it provides the data used by the application. Keep it in the project root directory unless the code is updated to use a different location.
-
-
 
 Before changing or deleting the file, create a backup if you want to preserve the existing book collection.
 
+---
 
+## 🔧 Troubleshooting
 
-\---
-
-
-
-\## 🔧 Troubleshooting
-
-
-
-\### Python is not recognized
-
-
+### Python is not recognized
 
 Try:
-
-
 
 ```bash
 
@@ -740,85 +468,51 @@ py main.py
 
 ```
 
-
-
 If that does not work, install Python and configure PATH.
 
-
-
-\### The application window does not open
-
-
+### The application window does not open
 
 Check that Python and Tkinter are installed and review any error messages printed in the terminal.
 
-
-
-\### A module cannot be imported
-
-
+### A module cannot be imported
 
 Ensure you are running the command from the project root directory and that the `algorithms/` folder is present.
 
+### The test command finds no tests
 
+Verify that the `try/` directory and the `test_*.py` files exist in the project root.
 
-\### The test command finds no tests
-
-
-
-Verify that the `try/` directory and the `test\_\*.py` files exist in the project root.
-
-
-
-\### Book data is missing
-
-
+### Book data is missing
 
 Check that `books.json` is present and contains valid JSON data.
 
+---
 
-
-\---
-
-
-
-\## 🚀 Future Improvements
-
-
+## 🚀 Future Improvements
 
 Potential improvements for future versions include:
 
+- Expanding book recommendation logic.
 
+- Improving search and filtering options.
 
-\- Expanding book recommendation logic.
+- Adding persistent borrowing history.
 
-\- Improving search and filtering options.
+- Enhancing error handling and input validation.
 
-\- Adding persistent borrowing history.
+- Improving the graphical interface and accessibility.
 
-\- Enhancing error handling and input validation.
+- Expanding automated test coverage.
 
-\- Improving the graphical interface and accessibility.
+- Adding documentation and demonstrations for additional algorithms.
 
-\- Expanding automated test coverage.
+- Introducing a web-based interface as a separate future enhancement, if required.
 
-\- Adding documentation and demonstrations for additional algorithms.
+---
 
-\- Introducing a web-based interface as a separate future enhancement, if required.
-
-
-
-\---
-
-
-
-\## 👥 Project Team
-
-
+## 👥 Project Team
 
 This project is developed collaboratively by the following team members:
-
-
 
 | Roll No. | Team Member Name |
 
@@ -834,33 +528,16 @@ This project is developed collaboratively by the following team members:
 
 | 69 | Prathamesh Kale |
 
-
-
-
-
 Developed as an academic project to demonstrate the application of Data Structures and Algorithms using Python.
 
-
-
-\## 📜 License
-
-
+## 📜 License
 
 This project is intended for educational and learning purposes. If you plan to redistribute or reuse the code publicly, consider adding an explicit open-source license.
 
+---
 
-
-\---
-
-
-
-\*\*Repository:\*\*  
+**Repository:**  
 
 https://github.com/JidnyasaMude/Smart-Library-Book-Recommendation-System
 
-
-
 If you find this project useful for learning Data Structures and Algorithms, feel free to explore the code and test the implementations.
-
-
-
