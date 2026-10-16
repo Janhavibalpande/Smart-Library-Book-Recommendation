@@ -102,6 +102,106 @@ The desktop interface is built using Tkinter and is intended to make library ope
 
 ---
 
+## 🖼️ Application Screenshots
+
+The following screenshots demonstrate the graphical interface and key features of the Smart Library & Book Recommendation System.
+
+### 1. Dashboard
+
+The main dashboard provides an overview of the library and quick access to its features.
+
+![Dashboard](screenshots/01_dashboard.png)
+
+### 2. Book Management
+
+View the book collection and manage library records.
+
+![Book Management](screenshots/02_book_management.png)
+
+### 3. Add Book Form
+
+Add a new book by entering its details, including quantity.
+
+![Add Book Form](screenshots/03_add_book_form.png)
+
+### 4. Book Added Successfully
+
+View the newly added book in the library collection.
+
+![Book Added](screenshots/04_book_added.png)
+
+### 5. Search Books
+
+Search for books using the application's supported search options.
+
+![Search Book](screenshots/05_search_book.png)
+
+### 6. Delete Book
+
+Remove a book record from the library.
+
+![Delete Book](screenshots/06_delete_book.png)
+
+### 7. Borrow Book
+
+Manage book borrowing and availability.
+
+![Borrow Book](screenshots/07_borrow_book.png)
+
+### 8. Book Quantity After Return
+
+Verify the available quantity after a borrowed book is returned.
+
+![Quantity After Return](screenshots/08_quantity_after_return.png)
+
+### 9. Book Recommendations
+
+Explore book recommendations provided by the application.
+
+![Recommendations](screenshots/09_recommendations.png)
+
+### 10. Recommendations Using BFS
+
+Demonstration of Breadth-First Search (BFS) in the recommendation functionality.
+
+![Recommendations with BFS](screenshots/10_recommendations_with_BFS.png)
+
+### 11. Recommendations Using DFS
+
+Demonstration of Depth-First Search (DFS) in the recommendation functionality.
+
+![Recommendations with DFS](screenshots/11_recommendations_with_DFS.png)
+
+### 12. Activity History
+
+Review library activities recorded by the application.
+
+![Activity History](screenshots/12_activity_history.png)
+
+### 13. Borrowing Requests Queue
+
+View pending requests managed using queue-based processing.
+
+![Requests Queue](screenshots/13_requests_queue.png)
+
+### 14. Next Request Using FIFO
+
+Demonstration of First In, First Out (FIFO) request processing.
+
+![Next Request FIFO](screenshots/14_next_request_FIFO.png)
+
+### 15. Last Added Item Using LIFO
+
+Demonstration of Last In, First Out (LIFO) behaviour.
+
+![Last Added LIFO](screenshots/15_last_added_LIFO.png)
+
+### 16. Dashboard After Operations
+
+The dashboard after performing library operations.
+
+![Dashboard After Changes](screenshots/16_dashboard_after_changes.png)
+
 ## 🛠️ Technologies Used
 
 | Technology | Purpose |
